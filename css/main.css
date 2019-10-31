@@ -97,69 +97,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-    #wrapper {
-      width: 960px;
-      border: black thin;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 18px;
-      line-height: 30px;
-      font-family: SansSerif, "Helvetica Neue", Helvetica;
-    }
-    #logo img {
-      height: 116px;
+#wrapper {
+  margin: 10px 100px 10px 100px;
+  align-content: start;
+  font-family: Georgia;
+}
 
-    }
-    #article_text {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-    #top {
-      height: 120px;
-      line-height: 120px
-    }
-    #masthead {
-      height: 78px;
-      background-size: cover;
-      background: url(../img/background.jpg) no-repeat;
-      background-position-y: center;
-    }
-    #main_menu menu {
-      padding: 0px;
-      margin: 0px;
-      text-align: right;
-    }
-    #sidebar img {
-      padding: 20px;
-    }
-    #sidebar_image {
-      margin-right: auto;
-      margin-left: auto;
-      width: 320px;
-    }
-    #footer {
-      height: 120px;
-    }
-    .centerText {
-      text-align: center;
-    }
-    .floatLeft {
-      float: left;
-    }
-    .grBig {
-      width: 593px;
-    }
-    .grSmall {
-      width: 367px;
-    }
-    .clear {
-      clear: both;
-    }
-    #main_menu li  {
-      display: inline;
-      margin: 0px 0px 0px 30px;
+#logo {
+  padding: 20px;
+  display: inline-block;
+}
 
-    }
+#masthead {
+  height: 50px;
+  background: url("../img/underwater.jpg") center;
+}
+
+#main_menu li{
+  display: inline-block;
+  margin: 0px 12px 0px 12px;
+  font-size: 22px;
+}
+
+#article_heading {
+  font-size: 16px;
+}
+
+#article_text {
+  font-size: 14px;
+  float: left;
+  width: 670px;
+  line-height: 30px;
+  position: relative;
+  clear: both;
+}
+
+#main_menu {
+  display: inline-block;
+}
+
+#sidebar_image {
+  display: inline-block;
+  position: absolute;
+  padding-left: 50px;
+}
+
+#copyright {
+  position: relative;
+  text-align: center;
+  clear: both;
+}
+
+.logo_image {
+  width: 350px;
+  height: auto;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -254,9 +247,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -325,4 +318,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
